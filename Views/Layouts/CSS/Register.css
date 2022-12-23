@@ -1,4 +1,4 @@
-.body-login {
+.body-register {
   margin: 0;
   padding: 0;
   width: 80vw;
@@ -9,7 +9,7 @@
   font-size: 26px;
 }
 
-.form-login {
+.form-register {
   width: auto;
   height: auto;
   border-radius: 5px;
@@ -19,21 +19,21 @@
   align-items: center;
 }
 
-.form-login .input {
+.form-register .input {
   margin: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.form-login .input input {
+.form-register .input input {
   font-size: 24px;
 }
 
-.form-login .input button {
+.form-register .input button {
   font-size: 24px;
 }
 
-.form-login .spacer {
+.form-register .spacer {
   margin: 10px;
   padding: 5px;
 }

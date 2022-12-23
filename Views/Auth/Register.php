@@ -1,14 +1,19 @@
 <?php
-$Title = 'Home';
+$Title = 'Register';
 require_once __DIR__ . '/../Layouts/Header.layout.php';
 ?>
 
-<div class="body-login">
-  <div class="form-login">
-    <form method="POST" action="/login">
+<div class="body-register">
+  <div class="form-register">
+    <form method="POST" action="/register">
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"> <?php echo $_GET['error']; ?></p>
       <?php } ?>
+      <div class="input">
+        <label>User Name:</label>
+        <input name='uname' type="text" placeholder="User Name..." required />
+      </div>
+      <div class="spacer"></div>
       <div class="input">
         <label>Email:</label>
         <input name='mail' type="email" placeholder="Email..." required />
@@ -20,7 +25,7 @@ require_once __DIR__ . '/../Layouts/Header.layout.php';
       </div>
       <div class="spacer"></div>
       <div class="input">
-        <button name="login">Login</button>
+        <button name="register">Register</button>
       </div>
     </form>
   </div>

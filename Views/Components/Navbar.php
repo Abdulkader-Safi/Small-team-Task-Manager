@@ -1,6 +1,6 @@
 <nav class="side-nav">
   <div class="header-nav">
-    <h1><a href="/">Task Manager</a></h1>
+    <h1><a href="/home">Task Manager</a></h1>
   </div>
   <div class="body-nav">
     <a href="/home">Home</a>
@@ -11,7 +11,7 @@
       <a href="#">Contact</a>
       <a href="#"></a>
       <a href="#"></a>
-      <a href="#">logout</a>
+      <a href="/logout">logout</a>
     <?php
     } else {
     ?>

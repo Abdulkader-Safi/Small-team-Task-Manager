@@ -6,6 +6,7 @@ $routes = [
     "/" => "../Controllers/View/Home.Controller.php",
     "/home" => "../Controllers/View/Home.Controller.php",
     "/login" => "../Controllers/Auth/Login.Controller.php",
+    "/register" => "../Controllers/Auth/Register.Controller.php",
 ];
 
 function routeToController($uri, $routes)

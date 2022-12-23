@@ -14,6 +14,7 @@
     require_once __DIR__ . '/CSS/Navbar.css';
     require_once __DIR__ . '/CSS/Home.css';
     require_once __DIR__ . '/CSS/Login.css';
+    require_once __DIR__ . '/CSS/Register.css';
     ?>
   </style>
 </head>

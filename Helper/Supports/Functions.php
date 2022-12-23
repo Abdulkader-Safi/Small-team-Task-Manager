@@ -13,7 +13,7 @@ function abort($code = 404)
 {
     http_response_code($code);
 
-    require "../View/{$code}.php";
+    require __DIR__ . "/../../Views/{$code}.php";
 
     die();
 }
@@ -45,16 +45,9 @@ if (!function_exists('base_path')) {
     }
 }
 
-if (!function_exists('style_path')) {
-    function style_path()
-    {
-        return base_path() . "/View/Style/style.css";
-    }
-}
-
 if (!function_exists('img_path')) {
     function img_path($img)
     {
-        return base_path() . "/View/Img" . $img;
+        return base_path() . "/../../Views/Img" . $img;
     }
 }

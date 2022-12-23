@@ -4,7 +4,7 @@ require_once __DIR__ . '/Layouts/Header.layout.php';
 ?>
 
 <div class="body-home">
-  test
+  Home
 </div>
 
 <?php
