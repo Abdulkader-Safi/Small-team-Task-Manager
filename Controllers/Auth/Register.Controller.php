@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user'] = $getUser['full_name'];
         $_SESSION['email'] = $getUser['email'];
 
-        Redirect('/projects');
+        Redirect('/home');
         exit();
       }
     }

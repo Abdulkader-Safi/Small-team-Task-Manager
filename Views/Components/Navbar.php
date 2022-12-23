@@ -5,7 +5,7 @@
   <div class="body-nav">
     <a href="/home">Home</a>
     <?php
-    if (isset($_SESSION['user_name'])) {
+    if (!is_null($_SESSION['id']) && !is_null($_SESSION['user']) && !is_null($_SESSION['email'])) {
     ?>
       <a href="#">Chat</a>
       <a href="#">Contact</a>
