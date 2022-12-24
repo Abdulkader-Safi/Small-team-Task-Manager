@@ -13,7 +13,7 @@ function abort($code = 404)
 {
     http_response_code($code);
 
-    require __DIR__ . "/../../Views/{$code}.php";
+    require __DIR__ . "./../../Views/{$code}.php";
 
     die();
 }
