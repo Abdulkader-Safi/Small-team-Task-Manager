@@ -11,7 +11,7 @@ require_once __DIR__ . '/../Layouts/Header.layout.php';
       <?php } ?>
       <div class="input">
         <label>Email:</label>
-        <input name='mail' type="email" placeholder="Email..." required />
+        <input name='email' type="email" placeholder="Email..." required />
       </div>
       <div class="spacer"></div>
       <div class="input">

@@ -7,7 +7,7 @@
     <?php
     if (!is_null($_SESSION['id']) && !is_null($_SESSION['user']) && !is_null($_SESSION['email'])) {
     ?>
-      <a href="#">Chat</a>
+      <a href="/chat">Chat</a>
       <a href="#">Contact</a>
       <a href="#"></a>
       <a href="#"></a>
