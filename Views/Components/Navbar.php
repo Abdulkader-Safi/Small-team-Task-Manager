@@ -5,18 +5,33 @@
   <div class="body-nav">
     <a href="/home">Home</a>
     <?php
-    if (!is_null($_SESSION['id']) && !is_null($_SESSION['user']) && !is_null($_SESSION['email'])) {
+    // dd($_SESSION);
+    if (!is_null($_SESSION['id']) && !is_null($_SESSION['user']) && !is_null($_SESSION['email']) && !is_null($_SESSION['admin'])) {
     ?>
       <a href="/chat">Chat</a>
-      <a href="#">Contact</a>
+      <a href="/task">Tasks</a>
       <a href="#"></a>
       <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <?php
+      if (isset($_SESSION['admin']) && $_SESSION['admin'] === "TRUE") {
+      ?>
+        <a href="/register">Register New User</a></a>
+        <a href="/users">Users</a>
+      <?php
+      } else {
+      ?>
+        <a href="#"></a>
+        <a href="#"></a>
+      <?php
+      }
+      ?>
       <a href="/logout">logout</a>
     <?php
     } else {
     ?>
       <a href="/login">Login</a>
-      <a href="/register">Register</a>
     <?php
     }
     ?>

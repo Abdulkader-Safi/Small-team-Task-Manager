@@ -1,5 +1,5 @@
 <?php
-$Title = 'Home';
+$Title = 'Login';
 require_once __DIR__ . '/../Layouts/Header.layout.php';
 ?>
 

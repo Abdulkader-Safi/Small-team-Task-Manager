@@ -33,6 +33,10 @@
   font-size: 24px;
 }
 
+.form-register .input select {
+  font-size: 24px;
+}
+
 .form-register .spacer {
   margin: 10px;
   padding: 5px;

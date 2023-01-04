@@ -23,6 +23,13 @@ require_once __DIR__ . '/../Layouts/Header.layout.php';
         <label>Password:</label>
         <input name='pass' type="password" placeholder="********" required />
       </div>
+      <div class="input">
+        <label>User Roll:</label>
+        <select name="user_roll">
+          <option value="normal">Normal User</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
       <div class="spacer"></div>
       <div class="input">
         <button name="register">Register</button>

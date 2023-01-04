@@ -9,6 +9,12 @@ $routes = [
     "/register" => "../Controllers/Auth/Register.Controller.php",
     "/logout" => "../Controllers/Auth/Logout.Controller.php",
     "/chat" => "../Controllers/View/Chat.Controller.php",
+    "/task" => "../Controllers/View/Task.Controller.php",
+    "/users" => "../Controllers/Auth/Users.Controller.php",
+
+
+
+    "/favicon" => "../Views/Layouts/CSS/favicon.png"
 ];
 
 function routeToController($uri, $routes)

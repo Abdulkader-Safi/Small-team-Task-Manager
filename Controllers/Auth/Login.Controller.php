@@ -24,6 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['id'] = $getUser['id'];
         $_SESSION['user'] = $getUser['full_name'];
         $_SESSION['email'] = $getUser['email'];
+        $_SESSION['admin'] = $getUser['roll'] === "admin" ? "TRUE" : "FALSE";
+        // if ($getUser['roll'] === 'admin') {
+        //   $_SESSION['ADMIN'] == "TRUE";
+        // } else {
+        //   $_SESSION['ADMIN'] == "FALSE";
+        // }
         Redirect('/home');
         exit();
       } else {
