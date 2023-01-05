@@ -43,7 +43,6 @@ $db = new Database();
       ?>
         <div class="massage-show-chat">
           <?php
-          $db = new Database();
           if (!is_null($_GET['to'])) {
             $friends = $db->query('SELECT c.massage, c.from_id, c.to_id FROM chats c WHERE ((c.from_id = :me AND c.to_id = :to) OR (c.to_id = :me AND c.from_id = :to )) ORDER BY id', ['me' => $_SESSION['id'], 'to' => $_GET['to']]);
             if (!$friends) {
@@ -62,17 +61,15 @@ $db = new Database();
             ?>
             <div class="not-select-chat">
               <div class="body-top-home">
-                Select friend
               </div>
             </div>
-
           <?php
           }
           ?>
         </div>
         <div class="massage-input-chat">
           <form action="/chat?to=<?= $_GET['to'] ?>" method="POST">
-            <input type="text" name="msg" placeholder="Massage..." required>
+            <input type="text" name="msg" placeholder="Massage..." autofocus required>
             <button name="send_msg">
               send
             </button>

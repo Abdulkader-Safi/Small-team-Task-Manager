@@ -1,6 +1,6 @@
 <nav class="side-nav">
   <div class="header-nav">
-    <h1><a href="/home">Task Manager</a></h1>
+    <h1><a href="/home">Mini Task Manager</a></h1>
   </div>
   <div class="body-nav">
     <a href="/home">Home</a>

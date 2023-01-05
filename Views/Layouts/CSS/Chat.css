@@ -4,6 +4,7 @@
   height: 100vh;
   width: 80vw;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .body-chat .body-top-chat {
@@ -13,12 +14,13 @@
 }
 
 .body-chat .body-top-chat .friend-chat {
-  width: 200px;
+  width: 10vw;
   margin: 7px;
   background-color: darkgray;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 15px;
 }
 
 .body-chat .body-top-chat .friend-chat .friend-title-chat {
@@ -43,6 +45,7 @@
   background-color: gray;
   overflow-y: hidden;
   white-space: nowrap;
+  border-radius: 7.5px;
 }
 
 .body-chat .body-top-chat .friend-chat .friend-name-chat a {
@@ -55,9 +58,10 @@
 }
 
 .body-chat .body-top-chat .friend-area-chat {
-  width: 865px;
+  width: 65vw;
   margin: 7px;
   background-color: darkgray;
+  border-radius: 15px;
 }
 
 .body-chat .body-top-chat .friend-area-chat .friend-area-top-chat {
@@ -75,25 +79,28 @@
   background-color: gray;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-  white-space: nowrap;
+  /* overflow-x: hidden; */
+  /* white-space: nowrap; */
 }
 
 .body-chat .body-top-chat .friend-area-chat .massage-input-chat {
-  margin: 5px;
+  margin: auto 0;
   padding: 5px;
 
+  height: 100px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .body-chat .body-top-chat .friend-area-chat .massage-input-chat form {
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width: 70%;
 }
 
 .body-chat .body-top-chat .friend-area-chat .massage-input-chat form input {
@@ -109,14 +116,19 @@
 .msg {
   margin: 3px;
   padding-left: 5px;
+  padding-right: 5px;
 }
 
 .msg.from {
   margin: 3px;
   background-color: aqua;
+  border-radius: 15px;
+  direction: rtl;
 }
 
 .msg.to {
   margin: 3px;
   background-color: aquamarine;
+  border-radius: 15px;
+  direction: ltr;
 }
