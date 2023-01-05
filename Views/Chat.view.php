@@ -13,7 +13,7 @@ $db = new Database();
       </div>
       <div class="friend-list-chat">
         <?php
-        $friends = $db->query('SELECT u.id, u.full_name from users u WHERE u.id != :me', ['me' => $_SESSION['id']]);
+        $friends = $db->query('SELECT u.id, u.full_name FROM users u WHERE u.id != :me', ['me' => $_SESSION['id']]);
         if (!$friends) {
           die("Invalid Query!");
         }
@@ -30,7 +30,7 @@ $db = new Database();
     <div class="friend-area-chat">
       <div class="friend-area-top-chat">
         <?php
-        $friend = $db->query('SELECT u.full_name from users u WHERE u.id = :to', ['to' => $_GET['to']]);
+        $friend = $db->query('SELECT u.full_name FROM users u WHERE u.id = :to', ['to' => $_GET['to']]);
         if (!$friends) {
           die("Invalid Query!");
         }

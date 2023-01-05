@@ -11,6 +11,8 @@ $routes = [
     "/chat" => "../Controllers/View/Chat.Controller.php",
     "/task" => "../Controllers/View/Task.Controller.php",
     "/users" => "../Controllers/Auth/Users.Controller.php",
+    "/delete" => "../Controllers/Auth/User/DeleteUser.Controller.php",
+    "/edit" => "../Controllers/Auth/User/EditUser.Controller.php",
 
 
 

@@ -1,0 +1,72 @@
+.body-users {
+  margin: 0;
+  padding: 0;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+.body-users .content-users {
+  border-radius: 15px;
+  margin: 10px;
+  padding: 5px;
+  width: 97%;
+  height: 95%;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.body-users .content-users .content-header-users {
+  width: 98%;
+  background: gray;
+  border-top-right-radius: 7.5px;
+  border-top-left-radius: 7.5px;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-users .content-users .content-body-users {
+  width: 98%;
+  height: 89%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.body-users .content-users .content-body-users table {
+  width: 50%;
+  margin: 15px;
+  height: fit-content;
+  border-collapse: collapse;
+  /* border-spacing: 10px; */
+}
+
+.body-users .content-users .content-body-users tr,
+.body-users .content-users .content-body-users th,
+.body-users .content-users .content-body-users td {
+  text-align: center;
+  border: 2px solid black;
+}
+
+.body-users .content-users .content-body-users td a {
+  text-decoration: none;
+}
+
+.chat {
+  color: blue;
+}
+
+.edit {
+  color: green;
+}
+
+.delete {
+  color: red;
+}

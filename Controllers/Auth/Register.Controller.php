@@ -31,20 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } catch (PDOException $e) {
       echo $e->getMessage();
     }
-    // $getUser = $db->query('SELECT * FROM users WHERE email = :email AND pass = :pass', ['email' => $email, 'pass' => $pass]);
-    // if ($getUser->rowCount() > 0) {
-    //   $getUser = $getUser->fetch();
-    //   if ($email === $getUser['email'] && $pass === $getUser['pass']) {
-
-    //     $_SESSION['id'] = $getUser['id'];
-    //     $_SESSION['user'] = $getUser['full_name'];
-    //     $_SESSION['email'] = $getUser['email'];
-    //     $_SESSION['admin'] = $getUser['roll'] === "admin" ? "TRUE" : "FALSE";
-
-    //     Redirect('/home');
-    //     exit();
-    //   }
-    // }
     Redirect('/register');
   }
 }
