@@ -41,7 +41,7 @@ $row = $user->fetch();
       </div>
       <div class="spacer"></div>
       <div class="input">
-        <button name="register">Update</button>
+        <button name="update">Update</button>
       </div>
     </form>
   </div>
