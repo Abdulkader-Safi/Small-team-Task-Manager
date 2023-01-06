@@ -37,17 +37,3 @@ function validate($data)
 
     return $data;
 }
-
-if (!function_exists('base_path')) {
-    function base_path()
-    {
-        return dirname(__DIR__) . "/..";
-    }
-}
-
-if (!function_exists('img_path')) {
-    function img_path($img)
-    {
-        return base_path() . "/../../Views/Img" . $img;
-    }
-}

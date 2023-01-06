@@ -4,13 +4,93 @@
   height: 100vh;
   width: 80vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .body-task .body-top-task {
+  width: 97%;
+  height: 10%;
+  background: gray;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5px;
+}
+
+.body-task .body-content-task {
+  width: 97%;
+  height: 80%;
+  background: lightgray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  margin: 5px;
+}
+
+.body-task .body-content-task .todos {
+  height: max-content;
+  width: 300px;
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.body-task .body-content-task .todos .todo_type {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-task .body-content-task .todos .todo_type h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.body-task .body-content-task .todos .todo_type h4 a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.body-task .body-content-task .todos .todos_in .todo {
+  height: 150px;
+  margin: 10px;
+  background-color: gray;
+  border-radius: 7.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.body-task .body-content-task .todos .todos_in .todo a.title {
+  padding: 10px;
+  margin: 0px;
+  color: black;
+  width: fit-content;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.body-task .body-content-task .todos .todos_in .todo p.description {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px;
+  color: black;
+  width: fit-content;
+  overflow: scroll;
+}
+
+.body-task .body-content-task .todos .todos_in .todo p.created_at {
+  padding: 10px;
+  margin: 0px;
+  color: black;
+  width: fit-content;
 }

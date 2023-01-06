@@ -18,6 +18,7 @@
   background: lightgray;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .body-users .content-users .content-body-users table {
-  width: 50%;
+  width: 70%;
   margin: 15px;
   height: fit-content;
   border-collapse: collapse;

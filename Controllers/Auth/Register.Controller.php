@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $roll = validate($_POST['user_roll']);
 
     try {
-      $notes = $db->query('INSERT INTO users(full_name, email, pass, roll) VALUES (:uname, :email, :pass, :roll)', ['uname' => $uname, 'email' => $email, 'pass' => $pass, 'roll' => $roll]);
+      $createUser = $db->query('INSERT INTO users(full_name, email, pass, roll) VALUES (:uname, :email, :pass, :roll)', ['uname' => $uname, 'email' => $email, 'pass' => $pass, 'roll' => $roll]);
     } catch (PDOException $e) {
       echo $e->getMessage();
     }

@@ -79,13 +79,12 @@
   background-color: gray;
   display: flex;
   flex-direction: column;
-  /* overflow-x: hidden; */
+  overflow-x: scroll;
   /* white-space: nowrap; */
 }
 
 .body-chat .body-top-chat .friend-area-chat .massage-input-chat {
   margin: auto 0;
-  padding: 5px;
 
   height: 100px;
   width: auto;
@@ -123,12 +122,10 @@
   margin: 3px;
   background-color: aqua;
   border-radius: 15px;
-  direction: rtl;
 }
 
 .msg.to {
   margin: 3px;
   background-color: aquamarine;
   border-radius: 15px;
-  direction: ltr;
 }

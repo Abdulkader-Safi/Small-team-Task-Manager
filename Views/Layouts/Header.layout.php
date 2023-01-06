@@ -20,6 +20,7 @@
     require_once __DIR__ . '/CSS/Chat.css';
     require_once __DIR__ . '/CSS/Task.css';
     require_once __DIR__ . '/CSS/Users.css';
+    require_once __DIR__ . '/CSS/NewTask.css';
     ?>
   </style>
 </head>
