@@ -16,12 +16,12 @@ $db = new Database();
       </div>
       <div class="todos_in">
         <?php
-        $todos = $db->query('SELECT * FROM todos t WHERE t.id != :id AND status = "new"', ['id' => $_SESSION['id']]);
-        if (!$todos) {
+        $new_todos = $db->query('SELECT * FROM todos t WHERE t.user_id = :id AND status = "new"', ['id' => $_SESSION['id']]);
+        if (!$new_todos) {
           die("Invalid Query!");
         }
 
-        while ($row = $todos->fetch(PDO::FETCH_ASSOC)) {
+        while ($row = $new_todos->fetch(PDO::FETCH_ASSOC)) {
         ?>
           <div class="todo">
             <a href="/update_todo?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
@@ -40,12 +40,12 @@ $db = new Database();
       </div>
       <div class="todos_in">
         <?php
-        $todos = $db->query('SELECT * FROM todos t WHERE t.id != :id AND status = "on_it"', ['id' => $_SESSION['id']]);
-        if (!$todos) {
+        $on_it_todos = $db->query('SELECT * FROM todos t WHERE t.user_id = :id AND status = "on_it"', ['id' => $_SESSION['id']]);
+        if (!$on_it_todos) {
           die("Invalid Query!");
         }
 
-        while ($row = $todos->fetch(PDO::FETCH_ASSOC)) {
+        while ($row = $on_it_todos->fetch(PDO::FETCH_ASSOC)) {
         ?>
           <div class="todo">
             <a href="/update_todo?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
@@ -64,12 +64,12 @@ $db = new Database();
       </div>
       <div class="todos_in">
         <?php
-        $todos = $db->query('SELECT * FROM todos t WHERE t.id != :id AND status = "done"', ['id' => $_SESSION['id']]);
-        if (!$todos) {
+        $done_todos = $db->query('SELECT * FROM todos t WHERE t.user_id = :id AND status = "done"', ['id' => $_SESSION['id']]);
+        if (!$done_todos) {
           die("Invalid Query!");
         }
 
-        while ($row = $todos->fetch(PDO::FETCH_ASSOC)) {
+        while ($row = $done_todos->fetch(PDO::FETCH_ASSOC)) {
         ?>
           <div class="todo">
             <a href="/update_todo?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
