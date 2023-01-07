@@ -5,7 +5,7 @@ require_once __DIR__ . '/Layouts/Header.layout.php';
 
 <div class="body-new-todo">
   <div class="form-new-todo">
-    <form method="POST" action="/new_todo">
+    <form method="POST" action="/new_task">
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"> <?php echo $_GET['error']; ?></p>
       <?php } ?>

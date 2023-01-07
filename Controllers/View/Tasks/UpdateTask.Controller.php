@@ -27,4 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     Redirect('/task');
   }
+
+  if (isset($_POST['delete_task'])) {
+    try {
+      $updateTask = $db->query('DELETE FROM todos WHERE id = :id', ['id' => $_GET['tid']]);
+    } catch (PDOException $e) {
+      echo $e->getMessage();
+    }
+    Redirect('/task');
+  }
 }

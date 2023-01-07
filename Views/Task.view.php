@@ -12,7 +12,7 @@ $db = new Database();
   <div class="body-content-task">
     <div class="todos">
       <div class="todo_type">
-        <h4><a href="/new_todo">New Todo</a></h4>
+        <h4><a href="/new_task">New Task</a></h4>
       </div>
       <div class="todos_in">
         <?php
@@ -24,9 +24,9 @@ $db = new Database();
         while ($row = $new_todos->fetch(PDO::FETCH_ASSOC)) {
         ?>
           <div class="todo">
-            <a href="/update_todo?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
+            <a href="/update_task?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
             <p class="description"><?= $row['description'] ?></p>
-            <p class="created_at">create at: <?= $row['created_at'] ?></p>
+            <p class="created_at">Created: <?= $row['created_at'] ?></p>
           </div>
         <?php
         }
@@ -48,9 +48,9 @@ $db = new Database();
         while ($row = $on_it_todos->fetch(PDO::FETCH_ASSOC)) {
         ?>
           <div class="todo">
-            <a href="/update_todo?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
+            <a href="/update_task?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
             <p class="description"><?= $row['description'] ?></p>
-            <p class="created_at">create at: <?= $row['created_at'] ?></p>
+            <p class="created_at">Updated: <?= $row['updated_at'] ?></p>
           </div>
         <?php
         }
@@ -72,9 +72,9 @@ $db = new Database();
         while ($row = $done_todos->fetch(PDO::FETCH_ASSOC)) {
         ?>
           <div class="todo">
-            <a href="/update_todo?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
+            <a href="/update_task?tid=<?= $row['id'] ?>" class="title"><?= $row['title'] ?></a>
             <p class="description"><?= $row['description'] ?></p>
-            <p class="created_at">create at: <?= $row['created_at'] ?></p>
+            <p class="created_at">Updated: <?= $row['updated_at'] ?></p>
           </div>
         <?php
         }

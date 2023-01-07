@@ -28,7 +28,7 @@
   border-radius: 15px;
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+  justify-content: space-around;
   margin: 5px;
 }
 
@@ -74,9 +74,10 @@
   padding: 10px;
   margin: 0px;
   color: black;
-  width: fit-content;
   text-decoration: none;
   cursor: pointer;
+  background-color: lightgray;
+  border-radius: 7.5px;
 }
 
 .body-task .body-content-task .todos .todos_in .todo p.description {

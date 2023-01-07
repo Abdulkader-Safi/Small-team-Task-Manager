@@ -13,8 +13,8 @@ $routes = [
     "/users" => "../Controllers/Auth/Users.Controller.php",
     "/delete" => "../Controllers/Auth/User/DeleteUser.Controller.php",
     "/edit" => "../Controllers/Auth/User/EditUser.Controller.php",
-    "/new_todo" => "../Controllers/View/Tasks/NewTask.Controller.php",
-    "/update_todo" => "../Controllers/View/Tasks/UpdateTask.Controller.php",
+    "/new_task" => "../Controllers/View/Tasks/NewTask.Controller.php",
+    "/update_task" => "../Controllers/View/Tasks/UpdateTask.Controller.php",
 
 
 

@@ -15,7 +15,7 @@ $row = $todo->fetch();
 
 <div class="body-new-todo">
   <div class="form-new-todo">
-    <form method="POST" action="/update_todo?tid=<?= $_GET['tid'] ?>">
+    <form method="POST" action="/update_task?tid=<?= $_GET['tid'] ?>">
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"> <?php echo $_GET['error']; ?></p>
       <?php } ?>
@@ -38,7 +38,10 @@ $row = $todo->fetch();
       </div>
       <div class="spacer"></div>
       <div class="input">
-        <button name="edit_task">Edit todo</button>
+        <button name="edit_task">Edit Task</button>
+      </div>
+      <div class="input">
+        <button name="delete_task">Delete Task</button>
       </div>
     </form>
   </div>
